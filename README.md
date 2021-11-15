@@ -1,12 +1,7 @@
 ## PAT-Net (Part-independent Attention Network for Skeleton Based Human Action Recognition)
  The PAT-Net contains a whitened pairwise self-attention, unary self-attention and position attention as independent functions and different projection matrices for learning representative action features.  The whitened pairwise self-attention captures the influence of a single key joint specifically on another query joint, and the unary self-attention models the general impact of one key joint over all other query joints to learn the discriminative action features. Furthermore, we design a position attention learning module that computes the correlation between  action semantics and position information separately with different projection matrices. 
 
-## The General Architecture of PAT-Net
-The architecture of our proposed PAT-Net. The PAT-Net performs attention learning in the spatial and temporal domains.
-![PAT-Net_V0](https://user-images.githubusercontent.com/78781422/141715136-e464eba0-0364-47a0-a1b1-0716ad31821a.png)
 
-# The attention learning in one PAT-Net block
-![PAT-Net-STA](https://user-images.githubusercontent.com/78781422/141715258-80206685-919d-4040-b753-fd58e6ad72d4.png)
 
 ## Python >= 3.6
 
