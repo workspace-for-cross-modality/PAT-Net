@@ -9,7 +9,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--dataset',
                         required=False,
-                        default='ntu/xview',
+                        default='ntu/xsub',
                         choices={'ntu/xsub', 'ntu/xview', 'ntu120/xsub', 'ntu120/xset'},
                         help='the work folder for storing results')
     parser.add_argument('--alpha',
@@ -61,7 +61,7 @@ if __name__ == "__main__":
 
     right_num = total_num = right_num_5 = 0
 
-    arg.alpha = [0.6, 0.6, 0.4, 0.4, 0.6, 0.6, 0.4, 0.4]
+    arg.alpha = [0.6, 0.6, 0.4, 0.4]
     for i in tqdm(range(len(label))):
         l = label[i]
         _, r11 = r1[i]
